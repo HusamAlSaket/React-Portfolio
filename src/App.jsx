@@ -16,6 +16,7 @@ import "./App.css";
 
 // Import AOS library
 import AOS from "aos";
+import GitHubRepos from "./components/GitHubRepos";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
       <About />
       <Skills />
       <Services />
+      <GitHubRepos/>
       <Contact />
       <Footer />
     </div>

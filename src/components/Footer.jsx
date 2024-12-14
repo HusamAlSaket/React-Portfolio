@@ -1,17 +1,16 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.module.css";
 
 const Footer = () => {
   return (
     <footer>
-    <div class="text">
-      <span>Created By
-        <a href="">Husam ALSaket</a> |
-        &#169;2024 All Rights Reserved
-      </span>
-    </div>
-   </footer>
-
+      <div className="text">
+        <span>
+          Created By
+          <a >Husam ALSaket</a> &#169;2024 All Rights Reserved
+        </span>
+      </div>
+    </footer>
   );
 };
 

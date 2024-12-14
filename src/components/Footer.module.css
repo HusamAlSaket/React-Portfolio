@@ -29,3 +29,24 @@ footer .text span a:hover{
     box-shadow: rgba(0, 0, 0, 0.15);
     display: none;
 }
+footer {
+    text-align: center;
+    padding: 20px 0; /* Adds space inside the footer */
+  }
+  
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between the text and the link */
+  }
+  
+  .text a {
+    color: #f39c12; /* Styling the link color */
+    text-decoration: none;
+  }
+  
+  .text a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  

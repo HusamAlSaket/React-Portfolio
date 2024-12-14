@@ -9,8 +9,8 @@ const Contact = () => {
           <span>Contact Me</span>
         </div>
         <div class="text">
-          <div class="topic"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi iusto ipsa incidunt fugiat quam possimus. Corrupti eaque quod aspernatur?</p>
+          <div class="topic"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Questions in mind?</div><br />
+          <p>Feel Free to Share them with me and i can help you with them</p>
           <div class="button"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
             <button>Let's Chat</button>
           </div>

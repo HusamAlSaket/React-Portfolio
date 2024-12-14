@@ -1,0 +1,63 @@
+.github-repos {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .github-repos h2 {
+    color: white; /* White color for the 'My Projects' heading */
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .repo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .repo-card {
+    background-color: #333; /* Dark background for the card */
+    color: white; /* White text for card content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+  }
+  
+  .repo-card:hover {
+    transform: scale(1.05);
+    background-color: #444; /* Slightly lighter shade on hover */
+  }
+  
+  .repo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .repo-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Red color for repo name */
+  }
+  
+  .repo-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .repo-card a {
+    text-decoration: none;
+    color: #e74c3c; /* Red color for the link */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .repo-card a:hover {
+    color: #fff; /* Change to white on hover */
+  }
+  

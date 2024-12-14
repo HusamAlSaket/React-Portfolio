@@ -22,6 +22,10 @@ const Navbar = () => {
       <div class="link" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="300"><a href="#skills">Skills</a></div>
       <div class="link" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="400"><a href="#services">Services</a></div>
       <div class="link" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="500"><a href="#contact">Contact</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+  <a href="#GitHubRepos">Projects</a>
+</div>
+
     </div>
     <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
@@ -32,6 +36,7 @@ const Navbar = () => {
         <a href="#">Skills</a>
         <a href="#">Service</a>
         <a href="#">Contact</a>
+        <a href="#">Projects</a>
         <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
       </div>
     </div>
