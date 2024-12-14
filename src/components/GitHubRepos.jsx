@@ -14,9 +14,9 @@ const GitHubRepos = () => {
       try {
         // Fetch the repositories from GitHub
         const response = await axios.get('https://api.github.com/users/HusamAlSaket/repos', {
-          headers: {
-            Authorization: `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`, // Add your GitHub token here
-          },
+          // headers: {
+          //   Authorization: `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`, // Add your GitHub token here
+          // },
           params: {
             per_page: 30, // Fetch a larger number of repos
             page: 1, // Get the first page of repos
