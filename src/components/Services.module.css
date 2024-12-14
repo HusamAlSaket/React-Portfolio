@@ -1,0 +1,63 @@
+/* Layout and Hover Styles */
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack boxes vertically (1 column) */
+  gap: 20px; /* Add spacing between each box */
+}
+
+.box {
+  margin: 20px 0;
+  width: 100%; /* Make each box take full width */
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  color: white;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.box:hover {
+  background: #b74b4b;
+  color: #fff;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background: #b74b4b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.box:hover .icon {
+  background-color: #fff;
+  color: #b74b4b;
+}
+
+.box:hover .topic,
+.box:hover p {
+  color: white;
+  transition: all 0.4s ease;
+}
+
+/* Animation Styles */
+.box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+.box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

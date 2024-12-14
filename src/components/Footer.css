@@ -1,0 +1,31 @@
+
+footer{
+    background: #b74b4b;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+footer .text span a{
+    font-weight: 500;
+    color: #fff;
+}
+footer .text span a:hover{
+    text-decoration: underline;
+}
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #b74b4b;
+    padding: 7px 12px;;
+    font-size:18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}

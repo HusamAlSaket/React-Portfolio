@@ -1,0 +1,146 @@
+.section {
+    width: 100%;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Optional background color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex; /* Side-by-side layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center-align content */
+    align-items: center; /* Vertically align */
+    gap: 30px; /* Space between items */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center-align text for smaller screens */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Image Styling */
+.main-container .image {
+    width: 350px; /* Base size for the image */
+    height: 450px;
+    border-radius: 50%; /* Circular image */
+    overflow: hidden;
+    box-shadow: 0 0 20px #b74b4b;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.main-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container */
+    border-radius: 50%;
+}
+
+.main-container .image:hover {
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Content Styling */
+.main-container .content {
+    color: white;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 600px; /* Limit maximum width */
+    padding: 20px;
+}
+
+/* Heading and Text Styling */
+.content h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    margin-bottom: 10px;
+}
+
+.content h1 span {
+    color: #b74b4b;
+    text-shadow: 0 0 10px #b74b4b;
+}
+
+.content .typewriter {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Social Links Styling */
+.social-links i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
+    color: #b74b4b;
+    margin: 5px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links i:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: #b74b4b;
+    filter: drop-shadow(0 0 10px #b74b4b);
+}
+
+/* Button Styling */
+.content button {
+    width: auto;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #b74b4b;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.content button:hover {
+    transform: scale(1.1);
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    background-color: transparent;
+    box-shadow: 0 0 20px #b74b4b;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .main-container .image {
+        width: 120px;
+        height: 120px;
+    }
+}

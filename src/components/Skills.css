@@ -1,0 +1,57 @@
+
+.skills{
+    background: black;
+}
+.skills .content{
+    padding: 40px 0; 
+}
+.skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-details .text{
+    width: 50%;
+}
+.skills-details p{
+    color: white;
+    text-align: justify;
+}
+.skills .skills-details .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.skills .skills-details .experience .num{
+    color: white;
+    font-size: 80px;
+}
+.skills .skills-details .experience .exp{
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+.skills .skills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box {
+    width: calc(50% - 20px); /* Correct spacing */
+    margin: 10px 0; /* Adjusted for even spacing */
+  }
+  
+.skills-details .boxes .topic{
+    font-size: 20px;
+    color: #b74b4b;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.skills-details .boxes .per{
+    font-size: 60px;
+    color: #b74b4b;
+}
